@@ -5,6 +5,11 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
+import Service from "./pages/Service.jsx";
+import Skill from "./pages/Skill.jsx";
+import Portfolio from "./pages/Portfolio.jsx";
+import Education from "./pages/Education.jsx";
+import Contact from "./pages/Contact.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +19,26 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <App element={<About />} />,
+  },
+  {
+    path: "/service",
+    element: <App element={<Service />} />,
+  },
+  {
+    path: "/skill",
+    element: <App element={<Skill />} />,
+  },
+  {
+    path: "/project",
+    element: <App element={<Portfolio />} />,
+  },
+  {
+    path: "/education",
+    element: <App element={<Education />} />,
+  },
+  {
+    path: "/contact",
+    element: <App element={<Contact />} />,
   },
 ]);
 
