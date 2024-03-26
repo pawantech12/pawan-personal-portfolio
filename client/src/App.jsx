@@ -9,7 +9,7 @@ function App({ element }) {
     <>
       <div className="home">
         <Navbar />
-        {element}
+        <div className="flex justify-center">{element}</div>
         <Footer />
       </div>
     </>
