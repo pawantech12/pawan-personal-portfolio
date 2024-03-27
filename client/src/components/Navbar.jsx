@@ -13,13 +13,15 @@ import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <header className="flex justify-center my-3 w-full">
-      <nav className="bg-gray-100 flex items-center justify-between w-1/2 py-2 px-8 shadow-md rounded-lg">
-        <div className="btns flex gap-5">
+      <nav className="bg-neutral-800 flex items-center justify-between w-1/2 py-2 px-8 shadow-md rounded-lg">
+        <div className="btns flex gap-5 text-white">
           <button>
             <NavLink
               to="/"
               className={`px-2 py-2 rounded-full flex items-center nav-link ${
-                window.location.pathname === "/" ? "active" : ""
+                window.location.pathname === "/"
+                  ? "active text-gray-200 bg-zinc-900"
+                  : ""
               }`}
             >
               <HomeOutlined className="!w-[30px] !h-[30px]" />
@@ -29,7 +31,9 @@ const Navbar = () => {
             <NavLink
               to="/about"
               className={`px-2 py-2 rounded-full flex items-center nav-link ${
-                window.location.pathname === "/about" ? "active" : ""
+                window.location.pathname === "/about"
+                  ? "active text-gray-200 bg-zinc-900"
+                  : ""
               }`}
             >
               <AccountCircleOutlined />
@@ -39,7 +43,9 @@ const Navbar = () => {
             <NavLink
               to="/service"
               className={`px-2 py-2 rounded-full flex items-center nav-link ${
-                window.location.pathname === "/service" ? "active" : ""
+                window.location.pathname === "/service"
+                  ? "active text-gray-200 bg-zinc-900"
+                  : ""
               }`}
             >
               <MiscellaneousServicesOutlined />
@@ -49,7 +55,9 @@ const Navbar = () => {
             <NavLink
               to="/skill"
               className={`px-2 py-2 rounded-full flex items-center nav-link ${
-                window.location.pathname === "/skill" ? "active" : ""
+                window.location.pathname === "/skill"
+                  ? "active text-gray-200 bg-zinc-900"
+                  : ""
               }`}
             >
               <DataObjectOutlined />
@@ -59,7 +67,9 @@ const Navbar = () => {
             <NavLink
               to="/project"
               className={`px-2 py-2 rounded-full flex items-center nav-link ${
-                window.location.pathname === "/project" ? "active" : ""
+                window.location.pathname === "/project"
+                  ? "active text-gray-200 bg-zinc-900"
+                  : ""
               }`}
             >
               <AccountTreeOutlined />
@@ -69,7 +79,9 @@ const Navbar = () => {
             <NavLink
               to="/education"
               className={`px-2 py-2 rounded-full flex items-center nav-link ${
-                window.location.pathname === "/education" ? "active" : ""
+                window.location.pathname === "/education"
+                  ? "active text-gray-200 bg-zinc-900"
+                  : ""
               }`}
             >
               <SchoolOutlined />
@@ -79,7 +91,9 @@ const Navbar = () => {
             <NavLink
               to="/contact"
               className={`px-2 py-2 rounded-full flex items-center nav-link ${
-                window.location.pathname === "/contact" ? "active" : ""
+                window.location.pathname === "/contact"
+                  ? "active text-gray-200 bg-zinc-900"
+                  : ""
               }`}
             >
               <ContactPageOutlined />

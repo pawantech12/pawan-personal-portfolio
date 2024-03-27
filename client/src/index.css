@@ -5,7 +5,3 @@
 .nav-link{
   transition: background-color 0.7s ease;
 }
-.nav-link.active {
-    background-color: white;
-
-  }
