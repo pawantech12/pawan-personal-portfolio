@@ -10,6 +10,7 @@ import Skill from "./pages/Skill.jsx";
 import Portfolio from "./pages/Portfolio.jsx";
 import Education from "./pages/Education.jsx";
 import Contact from "./pages/Contact.jsx";
+import SingleProjectPage from "./pages/SingleProjectPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "/project",
     element: <App element={<Portfolio />} />,
+  },
+  {
+    path: "/project/:id",
+    element: <App element={<SingleProjectPage />} />,
   },
   {
     path: "/education",

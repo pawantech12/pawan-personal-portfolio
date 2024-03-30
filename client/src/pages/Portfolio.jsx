@@ -1,5 +1,6 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import homepage from "../images/projectImage/homepage.png";
 const Portfolio = () => {
   return (
     <div className="flex justify-center mt-7">
@@ -10,10 +11,21 @@ const Portfolio = () => {
           </li>
         </ul>
         <div className="flex gap-5 flex-wrap justify-center mt-4">
-          <div className="rounded-xl p-5 shadow-lg w-72 text-center bg-zinc-900 text-white flex flex-col items-center gap-2">
+          <div className="rounded-xl p-5 shadow-lg w-80 bg-zinc-900 text-white flex flex-col items-center gap-2">
             <div>
-              <img src="" alt="" />
+              <img
+                src={homepage}
+                className="object-cover"
+                alt="NotePlus app Using MERN Stack"
+              />
             </div>
+            <Link className="text-xl font-medium">
+              NotePlus - Note Taking Web Application
+            </Link>
+            <p className="text-base text-gray-200">
+              NotePlus is a web application built with the MERN stack (MongoDB,
+              Express.js, React.js, Node.js) with Vite for frontend...
+            </p>
           </div>
         </div>
       </div>
