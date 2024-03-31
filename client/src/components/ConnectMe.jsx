@@ -4,7 +4,7 @@ import github from "../images/GitHub.png";
 import linkedin from "../images/LinkedIn.png";
 const ConnectMe = () => {
   return (
-    <div className="flex justify-center mt-7">
+    <div className="flex justify-center my-7">
       <div className="text-center bg-neutral-800 w-8/12 shadow-md rounded-xl py-7 px-8">
         <h4 className="text-white text-xl font-medium">Connect with me!</h4>
         <p className="text-gray-200 text-lg mt-2">

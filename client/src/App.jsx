@@ -8,11 +8,13 @@ import ConnectMe from "./components/ConnectMe";
 function App({ element }) {
   return (
     <>
-      <div className="home py-2">
+      <div className="home py-2 flex flex-col justify-between h-screen">
         <Navbar />
         {element}
-        <ConnectMe />
-        <Footer />
+        <div className="footer">
+          <ConnectMe />
+          <Footer />
+        </div>
       </div>
     </>
   );

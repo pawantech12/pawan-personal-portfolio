@@ -2,6 +2,11 @@ import { AutoAwesomeOutlined, ContentCopyOutlined } from "@mui/icons-material";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Skill from "./Skill";
+import About from "./About";
+import Service from "./Service";
+import Portfolio from "./Portfolio";
+import Education from "./Education";
+import Contact from "./Contact";
 
 const Home = () => {
   const [copied, setCopied] = useState(false);
@@ -66,7 +71,12 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <About />
+      <Service />
       <Skill />
+      <Portfolio />
+      <Education />
+      <Contact />
     </>
   );
 };
