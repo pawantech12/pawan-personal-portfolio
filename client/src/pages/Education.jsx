@@ -4,19 +4,19 @@ import React from "react";
 const Education = () => {
   return (
     <div className="flex justify-center mt-7">
-      <div className="bg-neutral-800 w-9/12 shadow-md rounded-xl py-7 px-8">
+      <div className="bg-[rgba(34,36,38,.4)] border-2 border-neutral-800 w-9/12 shadow-md rounded-xl py-7 px-8">
         <ul className=" px-5 ">
           <li className="list-disc text-xl font-medium text-gray-200">
             Education
           </li>
         </ul>
         <div className="mt-5 flex flex-col gap-5">
-          <ol className="relative border-s-2 border-zinc-900 dark:border-gray-700">
+          <ol className="relative border-s-2 border-neutral-700 dark:border-gray-700">
             <li className="mb-10 ms-6">
-              <span className="absolute flex items-center justify-center w-8 h-8 bg-zinc-900 rounded-full -start-4 ring-3 ring-zinc-900">
+              <span className="absolute flex items-center justify-center w-8 h-8 bg-neutral-700 rounded-full -start-4 ring-3 ring-neutral-800">
                 <SchoolOutlined className="text-gray-200" />
               </span>
-              <div className="p-4 bg-zinc-900 rounded-lg shadow-sm ">
+              <div className="p-4 bg-zinc-900 border-2 border-neutral-800 rounded-lg shadow-sm ">
                 <div className="items-center justify-between mb-3 sm:flex">
                   <time className="mb-1 text-sm font-medium text-gray-200 sm:order-last sm:mb-0 bg-neutral-800 py-1 px-3 rounded-full">
                     2021-2024
@@ -39,10 +39,10 @@ const Education = () => {
               </div>
             </li>
             <li className="mb-10 ms-6">
-              <span className="absolute flex items-center justify-center w-8 h-8 bg-zinc-900 rounded-full -start-4 ring-3 ring-zinc-900">
+              <span className="absolute flex items-center justify-center w-8 h-8 bg-neutral-700 rounded-full -start-4 ring-3 ring-neutral-800">
                 <SchoolOutlined className="text-gray-200" />
               </span>
-              <div className="p-4 bg-zinc-900 rounded-lg shadow-sm ">
+              <div className="p-4 bg-zinc-900 border-2 border-neutral-800 rounded-lg shadow-sm ">
                 <div className="items-center justify-between mb-3 sm:flex">
                   <time className="mb-1 text-sm font-medium text-gray-200 sm:order-last sm:mb-0 bg-neutral-800 py-1 px-3 rounded-full">
                     2019-2021

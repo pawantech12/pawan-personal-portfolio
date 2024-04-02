@@ -5,7 +5,7 @@ import { CodeOutlined, PlayArrowOutlined } from "@mui/icons-material";
 const SingleProjectPage = () => {
   return (
     <div className="flex justify-center mt-7">
-      <div className="bg-neutral-800 w-9/12 shadow-md rounded-xl py-7 px-8">
+      <div className="bg-[rgba(34,36,38,.4)] border-2 border-neutral-800 w-9/12 shadow-md rounded-xl py-7 px-8">
         <ul className=" px-5 ">
           <li className="list-disc text-xl font-medium text-gray-200">
             Project Details

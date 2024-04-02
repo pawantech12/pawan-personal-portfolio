@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <>
       <div className="flex justify-center mt-7">
-        <div className="bg-neutral-800 w-8/12 shadow-md rounded-xl py-7 px-8">
+        <div className="bg-[rgba(34,36,38,.4)] border-2 border-neutral-800 w-9/12 shadow-md rounded-xl py-7 px-8">
           <div className="header">
             <ul className="list-disc flex justify-between px-5 text-lg">
               <li className="font-medium text-white">
@@ -46,7 +46,7 @@ const Home = () => {
                 </p>
                 <div className="btn flex gap-3 items-center">
                   <button className="bg-zinc-950 text-white py-2 px-3 rounded-md">
-                    <Link>
+                    <Link to="https://www.linkedin.com/in/pawan-kumavat-11b105297/">
                       {" "}
                       <AutoAwesomeOutlined /> Hire Me
                     </Link>

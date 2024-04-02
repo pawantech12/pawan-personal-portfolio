@@ -17,14 +17,11 @@ const Contact = () => {
 
     // sending data to backend using fetch api
     try {
-      let response = await fetch(
-        `https://note-taking-website.onrender.com/api/contact`,
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(data),
-        }
-      );
+      let response = await fetch(`http://localhost:3000/api/contact`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
       let resdata = await response.json();
       if (!response.ok) {
         console.log("error occured");
@@ -49,12 +46,13 @@ const Contact = () => {
   };
   return (
     <div className="flex justify-center mt-7">
-      <div className="bg-neutral-800 w-9/12 shadow-md rounded-xl py-7 px-8">
+      <div className="bg-[rgba(34,36,38,.4)] border-2 border-neutral-800 w-9/12 shadow-md rounded-xl py-7 px-8">
         <ul className=" px-5 ">
           <li className="list-disc text-xl font-medium text-gray-200">
             Get In Touch
           </li>
         </ul>
+        {showMessage && <p className="text-white">{msg}</p>}
         <div className="mt-5">
           <form
             action=""
@@ -177,11 +175,11 @@ const Contact = () => {
             <div className="flex flex-col gap-1 max-sm:mt-6">
               <textarea
                 {...register("message", {
-                  required: "Note content is required",
+                  required: "Message is required",
                   pattern: {
                     value: /^[\w\s.,!?-]*$/,
                     message:
-                      "Invalid note content format. Only alphanumeric characters, spaces, commas, periods, exclamation marks, question marks, and hyphens are allowed.",
+                      "Invalid message format. Only alphanumeric characters, spaces, commas, periods, exclamation marks, question marks, and hyphens are allowed.",
                   },
                 })}
                 id="message"
@@ -190,9 +188,9 @@ const Contact = () => {
                 placeholder="Enter Message"
                 className="outline-none px-3 py-3 rounded-lg text-gray-200 text-base font-normal bg-zinc-900"
               ></textarea>
-              {errors.content && (
+              {errors.message && (
                 <p className="text-base ms-1 text-red-400">
-                  {errors.content.message}
+                  {errors.message.message}
                 </p>
               )}
             </div>

@@ -11,6 +11,7 @@ import Portfolio from "./pages/Portfolio.jsx";
 import Education from "./pages/Education.jsx";
 import Contact from "./pages/Contact.jsx";
 import SingleProjectPage from "./pages/SingleProjectPage.jsx";
+// import ProjectForm from "./pages/ProjectForm.jsx";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
     path: "/contact",
     element: <App element={<Contact />} />,
   },
+  // {
+  //   path: "/projectform",
+  //   element: <App element={<ProjectForm />} />,
+  // },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

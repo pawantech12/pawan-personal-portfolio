@@ -5,7 +5,7 @@ import linkedin from "../images/LinkedIn.png";
 const ConnectMe = () => {
   return (
     <div className="flex justify-center my-7">
-      <div className="text-center bg-neutral-800 w-8/12 shadow-md rounded-xl py-7 px-8">
+      <div className="text-center bg-[rgba(34,36,38,.4)] border-2 border-neutral-800 w-9/12 shadow-md rounded-xl py-7 px-8">
         <h4 className="text-white text-xl font-medium">Connect with me!</h4>
         <p className="text-gray-200 text-lg mt-2">
           I'm always interested in collaborating on new projects or simply

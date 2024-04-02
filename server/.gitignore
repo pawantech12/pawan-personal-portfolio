@@ -1,0 +1,16 @@
+node_modules
+.env
+router/projectRouter.js
+package-lock.json
+models/projectModel.js
+controllers/projectController.js
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
