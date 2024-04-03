@@ -5,7 +5,7 @@ import { CodeOutlined, PlayArrowOutlined } from "@mui/icons-material";
 const SingleProjectPage = () => {
   return (
     <div className="flex justify-center mt-7">
-      <div className="bg-[rgba(34,36,38,.4)] border-2 border-neutral-800 w-9/12 shadow-md rounded-xl py-7 px-8">
+      <div className="bg-[rgba(34,36,38,.4)] border-2 border-neutral-800 w-9/12 max-md:w-11/12 shadow-md rounded-xl py-7 px-8">
         <ul className=" px-5 ">
           <li className="list-disc text-xl font-medium text-gray-200">
             Project Details
@@ -34,15 +34,21 @@ const SingleProjectPage = () => {
               This separation ensures optimal performance for both the user
               interface and the data processing aspects of NotePlus.
             </p>
-            <div className="btns flex justify-center mt-5 gap-3">
+            <div className="btns flex justify-center max-[439px]:flex-col mt-5 gap-3">
               <button className="bg-zinc-950 font-medium text-white py-2 px-3 rounded-md">
-                <Link className="flex items-center gap-1">
+                <Link
+                  className="flex items-center gap-1 justify-center"
+                  to="https://note-taking-website-six.vercel.app/"
+                >
                   {" "}
                   <PlayArrowOutlined /> View Demo
                 </Link>
               </button>
               <button className="bg-white font-medium text-zinc-950 py-2 px-3 rounded-md">
-                <Link className="flex items-center gap-1">
+                <Link
+                  className="flex items-center gap-1 justify-center"
+                  to="https://github.com/pawantech12/note-taking-website"
+                >
                   <CodeOutlined /> View Source Code
                 </Link>
               </button>

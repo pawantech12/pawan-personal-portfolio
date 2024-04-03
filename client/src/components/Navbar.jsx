@@ -34,12 +34,12 @@ const Navbar = () => {
   return (
     <header className="flex justify-center my-3 w-full">
       <nav
-        className="bg-[rgba(34,36,38,.4)] border-2 border-neutral-800 flex items-center justify-between w-9/12 max-md:w-5/6 py-2 px-8 shadow-md rounded-lg  relative"
+        className="bg-[rgba(34,36,38,.4)] border-2 border-neutral-800 flex items-center justify-between w-9/12 max-md:w-11/12 py-2 px-8 shadow-md rounded-lg  relative"
         ref={navRef}
       >
-        <div className="flex items-center">
+        <div className="md:hidden flex items-center">
           <button
-            className="md:hidden text-white focus:outline-none"
+            className="text-white focus:outline-none"
             onClick={toggleNavbar}
           >
             <svg
@@ -65,7 +65,7 @@ const Navbar = () => {
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } md:flex max-md:bg-zinc-900 max-md:border-2 max-md:border-neutral-800  w-full max-md:w-fit max-md:absolute max-md:left-0 max-md:mt-3 max-md:rounded-lg  max-md:top-[100%] z-10`}
+          } md:flex justify-between max-md:bg-zinc-900 max-md:border-2 max-md:border-neutral-800   max-md:w-fit max-md:absolute max-md:left-0 max-md:mt-3 max-md:rounded-lg  max-md:top-[100%] z-10`}
         >
           <div className="btns max-md:px-3 max-md:py-2 flex flex-col md:flex-row gap-5 text-white md:w-fit w-full">
             <button>
@@ -77,7 +77,7 @@ const Navbar = () => {
                     : ""
                 }`}
               >
-                <HomeOutlined className="!w-[30px] !h-[30px]" />
+                <HomeOutlined />
               </NavLink>
             </button>
             <button>
@@ -89,7 +89,7 @@ const Navbar = () => {
                     : ""
                 }`}
               >
-                <AccountCircleOutlined className="!w-[30px] !h-[30px]" />
+                <AccountCircleOutlined />
               </NavLink>
             </button>
             <button>
@@ -101,7 +101,7 @@ const Navbar = () => {
                     : ""
                 }`}
               >
-                <MiscellaneousServicesOutlined className="!w-[30px] !h-[30px]" />
+                <MiscellaneousServicesOutlined />
               </NavLink>
             </button>
             <button>
@@ -113,7 +113,7 @@ const Navbar = () => {
                     : ""
                 }`}
               >
-                <DataObjectOutlined className="!w-[30px] !h-[30px]" />
+                <DataObjectOutlined />
               </NavLink>
             </button>
             <button>
@@ -125,7 +125,7 @@ const Navbar = () => {
                     : ""
                 }`}
               >
-                <AccountTreeOutlined className="!w-[30px] !h-[30px]" />
+                <AccountTreeOutlined />
               </NavLink>
             </button>
             <button>
@@ -137,7 +137,7 @@ const Navbar = () => {
                     : ""
                 }`}
               >
-                <SchoolOutlined className="!w-[30px] !h-[30px]" />
+                <SchoolOutlined />
               </NavLink>
             </button>
             <button>
@@ -149,7 +149,7 @@ const Navbar = () => {
                     : ""
                 }`}
               >
-                <ContactPageOutlined className="!w-[30px] !h-[30px]" />
+                <ContactPageOutlined />
               </NavLink>
             </button>
           </div>

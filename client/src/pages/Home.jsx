@@ -23,18 +23,18 @@ const Home = () => {
   return (
     <>
       <div className="flex justify-center mt-7">
-        <div className="bg-[rgba(34,36,38,.4)] border-2 border-neutral-800 w-9/12 shadow-md rounded-xl py-7 px-8">
+        <div className="bg-[rgba(34,36,38,.4)] border-2 border-neutral-800 w-9/12 max-md:w-11/12 shadow-md rounded-xl py-7 px-8">
           <div className="header">
-            <ul className="list-disc flex justify-between px-5 text-lg">
+            <ul className="list-disc flex max-sm:flex-col gap-2 justify-between px-5 text-lg">
               <li className="font-medium text-white">
                 Full Stack Developer(MERN)
               </li>
-              <li className="bg-emerald-100 list-none px-3 py-1 uppercase text-base font-medium text-emerald-600 rounded-full">
+              <li className="bg-emerald-100 list-none px-3 py-1 max-md:w-fit uppercase text-base font-medium text-emerald-600 rounded-full">
                 Available for Freelancer
               </li>
             </ul>
-            <div className="flex justify-between mt-3 items-center">
-              <div className="intro w-8/12 flex flex-col justify-between gap-5">
+            <div className="flex justify-between mt-3 max-md:mt-5 items-center max-md:flex-col-reverse max-md:gap-3">
+              <div className="intro w-8/12 max-md:w-11/12 flex flex-col justify-between gap-5">
                 <h1 className="text-4xl font-medium text-white">
                   I'm Pawan Kumavat
                 </h1>
@@ -44,15 +44,15 @@ const Home = () => {
                   MERN Stack (React, Node.js, Express, MongoDB) and PHP/MySQL.
                   Currently expanding my knowledge with Next.js and Java.
                 </p>
-                <div className="btn flex gap-3 items-center">
-                  <button className="bg-zinc-950 text-white py-2 px-3 rounded-md">
+                <div className="btn flex gap-3 items-center max-[439px]:flex-col">
+                  <button className="bg-zinc-950 max-[439px]:w-full text-white py-2 px-3 rounded-md">
                     <Link to="https://www.linkedin.com/in/pawan-kumavat-11b105297/">
                       {" "}
                       <AutoAwesomeOutlined /> Hire Me
                     </Link>
                   </button>
                   <button
-                    className="bg-transparent text-white py-2 px-3 rounded-md border border-gray-200"
+                    className="bg-transparent max-[439px]:w-full text-white py-2 px-3 rounded-md border border-gray-200"
                     onClick={copyToClipboard}
                   >
                     {" "}
